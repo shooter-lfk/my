@@ -1,0 +1,32 @@
+/*
+ * Ideal Forms "Sapphire" theme
+ * by Cedric Ruiz 
+ * elclanrs@gmail.com
+ * Version 0.72
+*/
+
+
+/* Selection highlight ******************/
+ul.idealSelect ul li:hover {color: #ccc;background-color: #FFFFFF;}
+label:hover span {background:#5a5a5a;background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#ffffff));background: -o-linear-gradient(top, #eeeeee 0%,#ffffff 100%);color:#ccc;box-shadow: 0 0 3px #207ce5;-webkit-box-shadow: 0 0 3px #207ce5;-moz-box-shadow: 0 0 3px #207ce5;}
+label input[type="radio"] + span.selected {background-color:#207ce5; background: -moz-linear-gradient(top, #eeeeee 0%, #207ce5 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#207ce5));background: -o-linear-gradient(top, #eeeeee 0%,#207ce5 100%);color:#ccc;box-shadow: 0 0 3px #207ce5;-webkit-box-shadow: 0 0 3px #207ce5;-moz-box-shadow: 0 0 3px #207ce5;}
+label span em,label input[type="checkbox"] + span.selected:before { /* Checkmark */color:#207ce5;}
+/* Text inputs *************************/
+textarea,input[type="text"],input[type="password"]{ margin-bottom:2px;border: 1px solid #d0d0d0;color: #000;background-color: #ffffff;margin-right:10px;}
+textarea:hover,input[type="text"]:hover,input[type="password"]:hover,input[type="text"].stext:hover,textarea:focus,input[type="text"]:focus,input[type="text"].stext:focus,input[type="password"]:focus,input:focus + span,ul.idealSelect.focused div li,a.button:focus { margin-bottom:2px;border: 1px solid #d0d0d0;color: #000;background-color: #ffffff;}
+input[type="text"].stext,input[type="text"].stext:hover,input[type="text"].stext:focus{cursor:pointer;background-image:url(/images/dk_arrows.png);background-repeat:no-repeat;background-position:90% center;width:5em;}
+
+/* Select Menu *************************/
+ul.idealSelect div li {border: 1px solid #d0d0d0;color: #000;background-color: #ffffff;}
+ul.idealSelect:hover div li {background: #ffffff;box-shadow: 0 0 3px #207ce5;}
+ul.idealSelect div span {margin:-3px 0 0 -3px;background:url(dk_arrows.png) no-repeat center center;}
+ul.idealSelect ul {box-shadow: 0 0 3px #207ce5;border: 2px solid #1c1c1c;border-top: none;color: #ccc;background-color: #FFFFFF;}
+ul.idealSelect ul li {border-bottom: 1px solid #333;color: #9a9a9a;background-color: #FFFFFF;}
+
+/* Button ******************************/
+a.button {border:solid 1px #ffeb24;font-size:14px;color:#930;background:#ff6e01;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeb4c', endColorstr='#ff6e01');background:linear-gradient(top, #ffeb4c, #ff6e01);background:-moz-linear-gradient(top, #ffeb4c, #ff6e01);background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffeb4c), to(#ff6e01));cursor:pointer;}
+a.button:hover {color:#900;border-color:#ffeb4c;background:#ffeb4c;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6e01', endColorstr='#ffeb4c');background:linear-gradient(top, #ff6e01, #ffeb4c);background:-moz-linear-gradient(top, #ff6e01, #ffeb4c);background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff6e01), to(#ffeb4c));}
+
+/* Radios and Checkboxes ***************/
+label span {background:#ffffff;border:2px solid #1c1c1c;}
+label:active span {background:#ddd;}

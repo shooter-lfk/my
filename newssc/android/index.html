@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="cn-zh">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="skin/android.css" type="text/css" />
+<script type="text/javascript" src="skin/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="skin/config.js"></script>
+<script type="text/javascript">
+function selectType(id){
+	play.type=id;
+	//if(!play.played) 
+	play.played=game.type[id].type==1?10:63;
+	saveGlobalVar('play');
+}
+window.onload=function(){
+	loadGlobalVar('play');
+};
+$(function(){
+	var classNameForType={
+		6:'gd-11x5',
+		10:'pai3',
+		9:'fc3d',
+		11:'sh-ssl',
+		12:'xj-ssc',
+		1:'cq-ssc',
+		3:'jx-ssc',
+	};
+	
+	var $dom=$('section ul');
+	for(var type in game.type){
+		if(game.type[type].android=='1'){
+			//console.log('<li class="'+classNameForType[type]+'"><a onclick="selectType('+type+')" href="game.html">'
+			//+game.type[type].name+'</a></li>');
+			$dom.append('<li class="'+classNameForType[type]+'"><a onclick="selectType('+type+')" href="game.html">'
+			+game.type[type].name+'</a></li>');
+		}
+	}
+});
+</script>
+</head>
+<body>
+	<header>
+		<div class="link">
+        	<a class="game current" href="index.html">购奖大厅</a>
+            <a class="data" href="data.html">开奖大厅</a>
+            <a class="user" href="user.html">我的帐户</a>
+        </div>
+        <div class="logo"></div>
+	</header>
+    <section class="no-bottom">
+        <ul class="index-list">
+            <!-- <li class="gd-11x5"><a onclick="selectType(6)" href="game.html">广东11选5</a></li> -->
+
+        </ul>
+    </section>
+</body>
+</html>

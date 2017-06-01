@@ -1,0 +1,117 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{
+font-size:12px;
+padding:0px;
+margin:0px;
+
+font-family:"微软雅黑";
+background:url(images/bodybg.jpg) repeat;
+color:#696969;
+}
+
+img{
+border:0px;
+}
+p,form,ul,li,dl,dt,dd,h1,h2,h3{
+margin:0px;
+padding:0px;
+list-style:none;
+}
+
+#loginwrap{
+	background:url(images/loginbg.jpg) no-repeat center 0px;
+	height:900px;
+	width:100%;	
+}
+#loginwrap .loginforms{
+	width:430px;
+	margin:0px auto;
+	overflow:hidden;
+	padding-top:295px;
+}
+#loginwrap .loginforms form{
+	padding-left:125px;
+}
+#loginwrap .loginforms p{
+	padding:8px 0px 8px 5px;
+	height:40px;
+	overflow:hidden;
+}
+#loginwrap .loginforms p.vp2{
+	padding:6px 0px 8px 0px;
+	height:55px;
+}
+.logininput{
+	height:40px;
+	width:230px;
+	line-height:40px;
+	font-size:16px;
+	font-family:Verdana, Geneva, sans-serif;
+	background:none;
+	border:0px;
+	color:#ffffff;
+}
+.logininput2{
+	height:40px;
+	width:115px;
+	line-height:40px;
+	font-size:16px;
+	display:block;
+	float:left;
+	font-family:Verdana, Geneva, sans-serif;
+	background:none;border:0px;color:#ffffff;
+}
+.rndimg{
+	float:left;
+	display:inline;
+	margin-left:15px;
+	margin-top:3px;
+        cursor:pointer;
+}
+.longinbtn{
+	display:block;
+	float:left;
+	width:136px;
+	height:55px;
+	border:0px;
+	cursor:pointer;
+	background:url(images/loginbtn.png) no-repeat;
+   _background:url(images/loginbtn.gif) no-repeat;
+}
+.longinbtn:hover{
+	background:url(images/loginbtnv2.png) no-repeat;
+	_background:url(images/loginbtn.gif) no-repeat;
+}
+
+
+.longreset{
+	display:block;
+	float:left;
+	width:109px;
+	height:55px;
+	border:0px;
+	cursor:pointer;
+	margin-left:8px;
+	background:url(images/loginbtn.png) no-repeat -142px 0px;
+	_background:url(images/loginbtn.gif) no-repeat -142px 0px;
+}
+.longreset:hover{
+	background:url(images/loginbtnv2.png) no-repeat -142px 0px;
+	_background:url(images/loginbtn.gif) no-repeat -142px 0px;
+}
+#loginwrap .copy{
+	text-align:center;
+	padding-top:140px;
+	color:#774201;
+	padding-left:10px;
+}
+.spacing5{
+    height:5px;
+    clear:both;
+    overflow:hidden;    
+}
+
+
+
+

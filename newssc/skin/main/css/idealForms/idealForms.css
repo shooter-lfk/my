@@ -1,0 +1,48 @@
+/*
+ * Ideal Forms
+ * by Cedric Ruiz 
+ * elclanrs@gmail.com
+ * www.jqidealforms.com
+ *
+ * Version 0.69
+*/
+
+html, body, div, span, iframe,ul, li,form, label, legend {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+html,body,form{background:#282828;}
+body {line-height:1;}
+input, select {vertical-align:middle;}
+textarea{resize: none;}
+/* CAUTION ***************************************/
+@font-face {font-family: 'DistroIIBats';src:url('distro2_bats-webfont.eot');src:url('distro2_bats-webfont.eot?#iefix') format('embedded-opentype'),url('distro2_bats-webfont.woff') format('woff'),url('distro2_bats-webfont.ttf') format('truetype'),url('distro2_bats-webfont.svg#DistroIIBats') format('svg');font-weight:normal;font-style:normal;}
+:focus {outline:none;outline-style:none;}
+::-moz-focus-inner {border:0;}
+form * {font:normal 12px Arial } /* Global font */
+
+textarea,input[type="text"],input[type="password"] {width:12em;}
+textarea, input[type="text"],input[type="password"], ul.idealSelect li {padding:.5em;}
+textarea {width: 20em;height: 10em;overflow: auto;}
+ 
+/* Round Corners  ********************************/
+.button,ul.idealSelect div li,ul.idealSelect ul,input[type="text"],input[type="password"],textarea { border-radius: 5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+ul.idealSelect.menuOpen div li {border-radius: 5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-webkit-border-radius: 5px 5px 0 0;}
+ul.idealSelect.menuOpen ul ,ul.idealSelect ul li:last-child {border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;}
+ul.idealSelect ul li:last-child {border-bottom:0;}
+label input[type="checkbox"] + span {border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;} 
+label input[type="radio"] + span {border-radius: 16px;-moz-border-radius: 16px;-webkit-border-radius: 16px;}
+
+/* Button ***************************************/
+a.button {padding:0.5em 1em;display:inline-block;text-decoration:none;font-weight:bold;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;}
+
+/* Radio & Checkbox  ****************************/
+label span {position: relative;display: inline-block;width: 1.3em;height: 1.3em;margin: .2em .8em;margin-left: 0;*line-height: 1.8em;}
+p label:hover {cursor: pointer;}
+label span em,label input[type="checkbox"] + span.selected:before {content: "|"; position: absolute;bottom: -.3em;right: -.2em;font-size: 1.7em;font-family: DistroIIBats;}
+
+/* Select ***************************************/
+ul.idealSelect {display:inline-block;cursor: pointer;}
+ul.idealSelect li {margin:0 !important;}
+ul.idealSelect ul li {filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);height: 1.3em;*line-height: 1.8em;}
+ul.idealSelect,ul.idealSelect ul {list-style: none !important;list-style-position: outside !important;}
+ul.idealSelect div {position:relative;}
+ul.idealSelect div span {display:inline-block;position:absolute;border:.5em solid transparent;}
+ul.idealSelect ul {visibility:hidden;position:absolute;z-index:999; /*height:12em;overflow-y:scroll;overflow-x:hidden;*/}
